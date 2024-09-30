@@ -28,7 +28,6 @@ export const HomeStyle = styled.section`
     }
     .home {
         margin-top: 5rem;
-        background-color: #000000;
         background: url(${header});
         background-size: cover;
         background-position: center;
@@ -157,5 +156,103 @@ export const HomeStyle = styled.section`
         display: flex;
         justify-content: space-between;
         margin-top: 2rem;
+    }
+
+    /* Estilos do Grid */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .grid-container .color-destaque {
+        background-color: #0bc4ca;
+    }
+    .grid-container .grid-item {
+        padding: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
+        background-color: #000000;
+        text-align: center;
+        border-radius: 20px;
+        font-size: medium;
+    }
+    .grid-container .item2,
+    .item4,
+    .item6 {
+        background-color: #0bc4ca;
+        color: #000000;
+        padding: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: medium;
+    }
+
+   
+    .item1 {
+        grid-column: span 3;
+    }
+    .item2 {
+        grid-row: span 1;
+    }
+    .item3,
+    .item4,
+    .item5,
+    .item6,
+    .item7 {
+        grid-column: span 1;
+    }
+
+
+    @media (max-width: 1080px) {
+        .container {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+    @media (max-width: 880px) {
+        section {
+            padding: 4rem 0 3rem;
+        }
+        .pontos-container {
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            gap: 1rem;
+            padding: 0 10px;
+        }
+        .about-text {
+            text-align: center;
+        }
+    }
+    @media (max-width: 768px) {
+        .about-text span {
+            font-size: 0.9rem;
+        }
+        .about-text h2,
+        .heading h2 {
+            font-size: 1.4rem;
+        }
+    }
+    @media (max-width: 638px) {
+        .about-img {
+            order: 2;
+        }
+    }
+    @media (max-width: 572px) {
+        .pontos-container {
+            padding: 0;
+        }
+    }
+    @media (max-width: 442px) {
+        .home-text {
+            padding-left: 14px;
+        }
+        .home-text h1 {
+            font-size: 1.7rem;
+        }
     }
 `;

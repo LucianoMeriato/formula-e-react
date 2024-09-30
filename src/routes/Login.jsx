@@ -14,8 +14,8 @@ const LoginWrapper = styled.div`
     grid-template-columns: 1fr 1fr; 
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Tela inteira */
-    padding: 2rem;
+    height: 200vh; 
+    padding: 16rem;
 `;
 
 const LoginContainer = styled.div`
@@ -24,9 +24,9 @@ const LoginContainer = styled.div`
     row-gap: 1rem;
     background-color: ${colors.background};
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px ${colors.boxShadow};
-    width: 300px;
+    width: 350px;
     text-align: center;
 
     h2 {
@@ -60,8 +60,9 @@ const LoginContainer = styled.div`
 
 const ImageContainer = styled.div`
     img {
-        max-width: 100%;
+        max-width: 90%; 
         height: auto;
+        margin-left: 20px; 
     }
 `;
 

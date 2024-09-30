@@ -16,7 +16,7 @@ export const HomeStyle = styled.section`
         width: 100%;
     }
     body {
-        color: #dbdbdb;
+        color: #00000;
         background: #000000;
     }
     section {
@@ -130,7 +130,9 @@ export const HomeStyle = styled.section`
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 3rem;
-        padding: 0 50px;
+        padding: 0 90px;
+        margin-bottom: 10rem;
+        
     }
     .pontos-container .box {
         padding: 10px;
@@ -158,7 +160,7 @@ export const HomeStyle = styled.section`
         margin-top: 2rem;
     }
 
-    /* Estilos do Grid */
+    
     .grid-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

@@ -18,22 +18,24 @@ export const FooterStyle = styled.footer`
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 2rem;
+        row-gap: 5rem;
         justify-content: center;
         text-align: center;
-        padding: 0 20px;
-        margin-bottom: 3rem;
+        padding: 0 10px;
+        margin-bottom: 10rem;
     }
     
     .newsletter h2 {
         font-size: ${fonts.heading};
+        margin-bottom: 5rem;
     }
     
     .newsletter form {
         background: ${colors.secondary};
         box-shadow: 2px 2px 18px rgba(14, 52, 54, 0.15);
-        padding: 6px 10px;
+        padding: 5px 10px;
         border-radius: 5rem;
+       
     }
     
     .newsletter form input {
